@@ -1,12 +1,14 @@
 Prerequisites
 
-- Node.js installed
-- MySQL server installed locally
+-   Node.js installed
+-   MySQL server installed locally
 
 Installation
 
 1. Clone the repository:
-   git clone <repository-url>
+   git clone git@github.com:NarekDanielyan1993/fileManager.git
+2. Navigate to the project directory:
+   cd fileManager
 3. Install dependencies:
    npm install
 
@@ -16,11 +18,11 @@ Database Setup
 2. Create a .env file in the root directory and set your MySQL database credentials:
    DATABASE_URL=mysql://user:password@localhost:3306/database
    Replace user, password, and database with your MySQL credentials.
-3. add these env variables to the .env file
-    PORT=
-    ACCESS_TOKEN_KEY=
-    REFRESH_TOKEN_KEY=
-    HASH_SAULT=
+3. Add these env variables to the .env file
+   PORT=
+   ACCESS_TOKEN_KEY=
+   REFRESH_TOKEN_KEY=
+   HASH_SAULT=
 
 You can see env example file in .env.example located in the root directory.
 
@@ -30,11 +32,11 @@ You can see env example file in .env.example located in the root directory.
 
 To start the application in
 
-Development
+Development mode:
 
     npm run dev
 
-Production
+Production mode:
 
 1. Build the application:
    npm run build
