@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "rootDir": "./",
+        "moduleResolution": "NodeNext",
+        "resolveJsonModule": true,
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {
+            "types/*": ["./src/types/*"],
+            "utils/*": ["./src/utils/*"],
+            "middleware/*": ["./src/middleware/*"],
+            "controller/*": ["./src/controller/*"],
+            "service/*": ["./src/service/*"],
+            "model/*": ["./src/model/*"],
+            "repository/*": ["./src/repository/*"],
+            "constant/*": ["./src/constant/*"],
+            "lib/*": ["./src/lib/*"],
+            "route/*": ["./src/route/*"]
+        },
+        "typeRoots": ["./src/types/global/", "./node_modules/@types"],
+        "plugins": [{ "transform": "typescript-transform-paths" }]
+    },
+    "exclude": ["node_modules"],
+
+    "include": ["./src/**/*.ts"],
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    }
+}
